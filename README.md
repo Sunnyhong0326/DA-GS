@@ -9,10 +9,10 @@ This repository aims to reproduce the appearance modules from multiple papers in
 
 ## TODOs
 Support multiple decoupled appearance modules
-- [ ] [HierarchyGS](https://repo-sam.inria.fr/fungraph/hierarchical-3d-gaussians/) : Exposure compensation
-- [x] [VastGaussian](https://arxiv.org/pdf/2402.17427) : Decoupled appearance network
-- [x] [Bilateral Guided Radiance Field Processing](https://bilarfpro.github.io/) : Bilateral Grid
-- [x] [DAVIGS](https://arxiv.org/pdf/2501.10788) : 3D consistent feature field
+- [x] [HierarchyGS](https://repo-sam.inria.fr/fungraph/hierarchical-3d-gaussians/) : Exposure compensation
+- [ ] [VastGaussian](https://arxiv.org/pdf/2402.17427) : Decoupled appearance network
+- [ ] [Bilateral Guided Radiance Field Processing](https://bilarfpro.github.io/) : Bilateral Grid
+- [ ] [DAVIGS](https://arxiv.org/pdf/2501.10788) : 3D consistent feature field
 
 ## Ideas
 From the [DAVIGS](https://arxiv.org/pdf/2501.10788) paper, the 3D consistent feature field is queried by the rendered depth (alpha blended depth) of 3DGS. 
