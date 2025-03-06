@@ -1,0 +1,11 @@
+plyfile
+tqdm
+setuptools==69.1.1
+tensorly
+ninja
+opencv-python
+joblib
+submodules/diff-gaussian-rasterization
+submodules/simple-knn
+submodules/fused-ssim
+submodules/gsplat

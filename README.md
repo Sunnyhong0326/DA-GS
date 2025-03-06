@@ -25,15 +25,22 @@ Support multiple decoupled appearance modules
 - [ ] [Bilateral Guided Radiance Field Processing](https://bilarfpro.github.io/) : Bilateral Grid
 - [ ] [DAVIGS](https://arxiv.org/pdf/2501.10788) : 3D consistent feature field
 
-## Ideas
-From the [DAVIGS](https://arxiv.org/pdf/2501.10788) paper, the 3D consistent feature field is queried by the rendered depth (alpha blended depth) from 3DGS. 
-
-However, many papers and in my extensive experiments, the rendered depth map contains many holes which is not accurate enough. 
-
-To enable a stable training of querying 3D consistent feature field, we can adopt the same idea from [StereoGS](https://kuis-ai.github.io/StereoGS/) to get a more accurate depth map. Also, there are more foundation model existing over the past few weeks, which includes:
-
-* [FoundationStereo](https://nvlabs.github.io/FoundationStereo/) (CVPR 2025)
-* [StereoAnywhere](https://stereoanywhere.github.io/) (CVPR 2025)
-
 ## Installation
-Please refer to the original repository [gaussian-splatting](https://github.com/graphdeco-inria/gaussian-splatting) for installation and real-time viewer usage
+### Docker
+You can build docker image from scratch or pull the docker image
+#### Build from scratch
+```
+docker build -t dags .
+```
+#### Pull docker image
+```
+docker pull sunnyhong/dags
+```
+#### Run container
+```
+docker run -it --gpus all -v your_dags_path:/app -v your_dataset_path:/app/data -v your_output_path:/app/output bash
+# Run code in the container
+conda activate da-gs
+python train.py -s data/dataset_name -m output/dataset_name
+```
+Please refer to the original repository [gaussian-splatting](https://github.com/graphdeco-inria/gaussian-splatting) for real-time viewer usage
