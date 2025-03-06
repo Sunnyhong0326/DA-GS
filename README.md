@@ -32,7 +32,7 @@ However, many papers and in my extensive experiments, the rendered depth map con
 
 To enable a stable training of querying 3D consistent feature field, we can adopt the same idea from [StereoGS](https://kuis-ai.github.io/StereoGS/) to get a more accurate depth map. Also, there are more foundation model existing over the past few weeks, which includes:
 
-* [FoundationStereo](https://nvlabs.github.io/FoundationStereo/)
+* [FoundationStereo](https://nvlabs.github.io/FoundationStereo/) (CVPR 2025)
 * [StereoAnywhere](https://stereoanywhere.github.io/) (CVPR 2025)
 
 ## Installation
