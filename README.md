@@ -5,8 +5,9 @@ This repository aims to reproduce the decoupled appearance modules from multiple
 * [VastGaussian](https://arxiv.org/pdf/2402.17427) (CVPR 2024)
 * [Bilateral Guided Radiance Field Processing](https://bilarfpro.github.io/) (SIGGRAPH 2024 Honarable Mention)
 * [DAVIGS](https://arxiv.org/pdf/2501.10788) (AAAI 2025)
-## Motivation
 * [Luminance-GS](https://github.com/cuiziteng/Luminance-GS) (CVPR 2025)
+
+## Motivation
 To train a high quality radiance field without floaters, we often need to carefully capture the scene by fixing the exposure, white balance and other camera parameters to ensure the assumption of multiview consistency. However, for in-the-wild captures, it is hard to maintain the multiview consistency assumption because of varying lightning. Therefore, the radiance field would appear many floaters.
 
 Many papers handles this kind of varying lightning condition captures by introducing neural network into training 3DGS. Papers include:
