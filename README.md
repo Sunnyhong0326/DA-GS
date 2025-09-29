@@ -6,6 +6,7 @@ This repository aims to reproduce the decoupled appearance modules from multiple
 * [Bilateral Guided Radiance Field Processing](https://bilarfpro.github.io/) (SIGGRAPH 2024 Honarable Mention)
 * [DAVIGS](https://arxiv.org/pdf/2501.10788) (AAAI 2025)
 * [Luminance-GS](https://github.com/cuiziteng/Luminance-GS) (CVPR 2025)
+* [Bilateral-Driving](https://bigcileng.github.io/bilateral-driving/) (NeuralIPS 2025)
 
 ## Motivation
 To train a high quality radiance field without floaters, we often need to carefully capture the scene by fixing the exposure, white balance and other camera parameters to ensure the assumption of multiview consistency. However, for in-the-wild captures, it is hard to maintain the multiview consistency assumption because of varying lightning. Therefore, the radiance field would appear many floaters.
@@ -21,10 +22,11 @@ Although these methods are good at modeling appearance variations by using neura
 We seek for different approaches by **decoupling** the appearance variations and fuse into a floater-free radiance field which can be used in a normal rendering pipeline without inferencing a neural network.
 
 ## TODOs
-Support multiple decoupled appearance modules
+Support multiple decoupled appearance modules (Priority High to Low)
 - [x] [HierarchyGS](https://repo-sam.inria.fr/fungraph/hierarchical-3d-gaussians/) : Exposure compensation
-- [ ] [VastGaussian](https://arxiv.org/pdf/2402.17427) : Decoupled appearance network
 - [ ] [Bilateral Guided Radiance Field Processing](https://bilarfpro.github.io/) : Bilateral Grid
+- [ ] [Bilateral-Driving](https://bigcileng.github.io/bilateral-driving/) : Multi-scale Bilateral Grid
+- [ ] [VastGaussian](https://arxiv.org/pdf/2402.17427) : Decoupled appearance network
 - [ ] [DAVIGS](https://arxiv.org/pdf/2501.10788) : 3D consistent feature field
 - [ ] [Luminance-GS](https://github.com/cuiziteng/Luminance-GS)
 
